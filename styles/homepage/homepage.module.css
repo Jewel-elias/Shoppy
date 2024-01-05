@@ -1,0 +1,175 @@
+.listContainer, .filterContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.productList, .filtersList {
+    display: flex;
+    width: 80%;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.filtersList {
+    margin-bottom: 30px;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.filtersLabel {
+    font-size: 17px;
+}
+
+.filterForm {
+    display: flex;
+    gap: 20px;
+}
+
+.filterBtn {
+    height: 38px;
+    width: 15%;
+}
+
+.productCard {
+    display: flex;
+    flex-direction: column;
+    border: solid 1px gray;
+    padding: 10px;
+    width: 200px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.productCard:hover {
+    cursor: pointer;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+}
+
+.starBox {
+    position: absolute;
+    top: 10px;
+    left: auto;
+    background-color: wheat;
+    padding: 5px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 5px;
+}
+
+.imageStyle img {
+    border-radius: 5px;
+    width: 100% !important;
+}
+
+.infoRow {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.starRow {
+    margin-top: 0px;
+}
+
+.productRate {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.productTitle {
+    font-style: oblique;
+    font-size: 14px;
+    font-weight: bold;
+    width: 90%;
+}
+
+.productDescription {
+    font-size: 12px;
+    color: gray;
+    font-weight: lighter;
+    width: 50%;
+}
+
+/* INFO */
+.infoContainer, .commentsContainer {
+    padding: 50px 5%;
+}
+
+.infopageLabel {
+    padding: 20px 10px;
+    background-color: #11B5E4;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.infopageLabel span {
+    font-weight: bold;
+    padding-left: 20px;
+    font-size: 17px;
+}
+
+.cardBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.cardInfoCol {
+    padding: 30px 20px;
+}
+
+.cardInfoTitle {
+    font-style: oblique;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.commentsList {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.commentBox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+    padding: 5px 20px;
+}
+
+.commentBox:hover {
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+}
+
+.commentImg img {
+    border-radius: 30px;
+}
+
+.commentBody {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.spaceBetween {
+    display: flex;
+    justify-content: space-between;
+}
+
+.commentName {
+    font-weight: bold;
+}
+
+.commentText {
+    font-style: oblique;
+    font-size: 14px;
+    color: gray;
+}

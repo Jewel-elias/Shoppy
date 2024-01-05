@@ -1,0 +1,86 @@
+.LoginPage {
+    background-color: #11B5E4;
+    border: solid 1px #11B5E4;
+}
+
+.LoginBox {
+    margin: 40px;
+    padding: 20px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+
+.flipBackInner {
+    width: 40%;
+}
+
+.LoginForm, .SignupForm {
+    padding-top: 20px;
+    padding-bottom: 1px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color: #eee;
+    border-radius: 10px;
+    perspective: 1000px;
+    transition: opacity 0.2s linear;
+    overflow: hidden;
+}
+
+.SignupForm {
+    height: 0;
+    opacity: 0;
+}
+
+.LabelForm {
+    font-size: 14px;
+}
+
+.HeaderForm {
+    font-weight: bold1;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.Logo {
+    font-size: 45px;
+    text-align: center;
+    font-weight: bold;
+    color: #11B5E4;
+    font-style: italic;
+}
+
+.Logo span {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    color: #000
+}
+
+.link {
+    color: #2020b8;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+.forgotPass {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 14px;
+}
+
+.loginBtn {
+    border-color: #11B5E4;
+    background-color: #11B5E4;
+}
+
+.noAccount {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    font-size: 14px;
+    margin-top: 10px;
+}

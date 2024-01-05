@@ -1,0 +1,77 @@
+.listContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.orderList {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.orderCard {
+    display: flex;
+    flex-direction: column;
+    border: solid 1px gray;
+    width: 100%;
+    height: 120px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.orderCard:hover {
+    cursor: pointer;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+}
+
+.orderFlagContainer {
+    position: absolute;
+}
+
+.orderFlag {
+    height: 118px;
+    border-radius: 5px;
+    width: 40px;
+    background-color: #028f02;
+}
+
+.infoRow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5px;
+    gap: 6px;
+    padding-left: 15px;
+}
+
+.orderTitle {
+    font-style: oblique;
+    font-size: 14px;
+    font-weight: bold;
+    width: 90%;
+}
+
+.orderID, .productTitle, .userName {
+    font-size: 14px;
+    font-weight: bold;
+    width: 90%;
+    color: #028f02;
+}
+
+.productTitle, .userName {
+    color: black;
+}
+
+.orderDescription {
+    font-size: 12px;
+    color: gray;
+    font-weight: lighter;
+    width: 50%;
+}

@@ -1,0 +1,39 @@
+.navContainer {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.Logo {
+    font-size: 45px;
+    text-align: center;
+    font-weight: bold;
+    color: #11B5E4;
+    font-style: italic;
+}
+
+.Logo span {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    color: #000
+}
+
+.navLinks {
+    justify-content: flex-end;
+}
+
+.loginBtn {
+    border-color: #11B5E4;
+    background-color: #11B5E4;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.userName {
+    background-color: #11B5E4;
+    padding: 10px 20px;
+    margin: 10px 20px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}

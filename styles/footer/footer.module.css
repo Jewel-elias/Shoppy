@@ -1,0 +1,19 @@
+.footerContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: gray;
+    font-size: 10px;
+}
+
+.hr {
+    width: 80%;
+    border-color: #dee2e6;
+}
+
+.Logo {
+    font-size: 15px;
+    color: #11B5E4;
+    font-style: italic;
+}
