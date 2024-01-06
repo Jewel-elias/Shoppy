@@ -6,10 +6,10 @@ import React, { useEffect, useState } from "react";
 // Next
 import Image from "next/image";
 // Components
-import Layout from "@/components/Layout/Layout";
-import CommentBox from "@/components/Homepage/CommentBox";
+import CommentBox from "@/src/components/Homepage/CommentBox";
+import Layout from "@/src/components/Layout/Layout";
 // Functions
-import { getProduct } from "@/functions/store";
+import { getProduct } from "@/src/functions/store";
 
 export default function Page({ params }) {
   const [product, setProduct] = useState();

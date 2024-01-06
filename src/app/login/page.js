@@ -4,12 +4,10 @@ import styles from "../../styles/login/login.module.css";
 import Shopping from "../../assets/shopping.webp";
 // *** Next
 import Image from "next/image";
-import { BASE_URL } from "@/constants";
-import axios from "axios";
 import { useRouter } from "next/navigation";
-import Loginform from "@/components/Login/Loginform";
-import Signupform from "@/components/Login/Signupform";
-import { login, signup } from "@/functions/auth";
+import Loginform from "@/src/components/Login/Loginform";
+import Signupform from "@/src/components/Login/Signupform";
+import { login, signup } from "@/src/functions/auth";
 
 export default function Login() {
   const router = useRouter();

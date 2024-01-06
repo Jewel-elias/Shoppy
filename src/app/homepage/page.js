@@ -1,6 +1,6 @@
 "use client";
 // components
-import Layout from "@/components/Layout/Layout";
+import Layout from "@/src/components/Layout/Layout";
 // next
 import Image from "next/image";
 import { useRouter } from "next/navigation";
@@ -9,7 +9,7 @@ import React, { useEffect, useState } from "react";
 // styles
 import styles from "../../styles/homepage/homepage.module.css";
 // functions
-import { getAllProducts, getFilteredProducts } from "@/functions/store";
+import { getAllProducts, getFilteredProducts } from "@/src/functions/store";
 
 export default function HomePage() {
   const [products, setProducts] = useState([]);

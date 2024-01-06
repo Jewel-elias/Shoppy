@@ -1,5 +1,5 @@
 import axios from "axios";
-import { BASE_URL } from "@/constants";
+import { BASE_URL } from "../constants";
 
 export const getProduct = (setProduct, params) => {
   if (typeof window !== "undefined" && params.productId) {

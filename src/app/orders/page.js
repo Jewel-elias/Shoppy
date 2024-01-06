@@ -1,15 +1,14 @@
 "use client";
 // components
-import Layout from "@/components/Layout/Layout";
+import Layout from "@/src/components/Layout/Layout";
 // next
-import Image from "next/image";
 import { useRouter } from "next/navigation";
 // React
 import React, { useEffect, useState } from "react";
 // styles
 import styles from "../../styles/orders/orders.module.css";
 // functions
-import { getAllOrders } from "@/functions/store";
+import { getAllOrders } from "@/src/functions/store";
 
 export default function Orders() {
   const [orders, setOrders] = useState([]);
