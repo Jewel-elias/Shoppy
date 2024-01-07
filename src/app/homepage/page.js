@@ -78,7 +78,7 @@ export default function HomePage() {
                   >
                     <div className={styles.starBox}>
                       <div className={styles.productRate}>
-                        <span>{Math.round(product.rate * 100) / 100}</span>{" "}
+                        <span>{Math.round(product.rate * 100) / 100}</span>
                         <span className={styles.starIcon}>⭐</span>
                       </div>
                     </div>
@@ -88,19 +88,12 @@ export default function HomePage() {
                         alt={`img${product.id}`}
                         width={150}
                         height={150}
-                        // layout="responsive"
                         priority
                       />
                     </div>
                     <div className={styles.infoRow}>
                       <div className={styles.productTitle}>{product.title}</div>
                     </div>
-                    {/* <div className={styles.starRow}>
-                    <div className={styles.productRate}>
-                      <span>{Math.round(product.rate * 100) / 100}</span>{" "}
-                      <span>⭐</span>
-                    </div>
-                  </div> */}
                   </div>
                 );
               })

@@ -68,3 +68,27 @@ export const getAllOrders = (setOrders) => {
       .catch((err) => console.error(err));
   }
 };
+
+export const addComment = (e, product_id, content) => {
+  e.preventDefault();
+  axios
+    .post(
+      BASE_URL + "/api/comment",
+      {
+        product_id: product_id,
+        content: content,
+      },
+      {
+        headers: {
+          Authorization: `Bearer ${JSON.parse(
+            localStorage.getItem("token-shoppy")
+          )}`,
+        },
+      }
+    )
+    .then((res) => {
+      alert("Comment added Successfully");
+      document.getElementById("comment").value = "";
+    })
+    .catch((err) => console.error(err));
+};

@@ -32,28 +32,39 @@
 .filterBtn {
     height: 38px;
     width: 15%;
+    color: white;
+    border-color: #11B5E4;
+    background-color: #11B5E4;
 }
+
+.filterBtn:hover {
+    border-color: #11B5E4;
+    color: #11B5E4;
+    background-color: white;
+}
+
 
 .productCard {
     display: flex;
     flex-direction: column;
-    border: solid 1px gray;
+    /* border: solid 1px #11B5E4; */
+    /* border-radius: 5px; */
+    background-color: rgb(247, 247, 172);
     padding: 10px;
     width: 200px;
-    border-radius: 5px;
     position: relative;
 }
 
 .productCard:hover {
     cursor: pointer;
-    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+    box-shadow: 1px 1rem 1rem rgba(0, 0, 0, 0.075) !important;
 }
 
 .starBox {
     position: absolute;
     top: 10px;
     left: auto;
-    background-color: wheat;
+    background-color: rgb(247, 247, 172);
     padding: 5px;
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 5px;
@@ -97,13 +108,20 @@
 }
 
 /* INFO */
-.infoContainer, .commentsContainer {
+.infoContainer {
     padding: 50px 5%;
+}
+
+.infoContainer {
+    display: grid;
+    grid-template-columns: 6fr 3fr;
+    /* gap: 50px 100px; */
 }
 
 .infopageLabel {
     padding: 20px 10px;
-    background-color: #11B5E4;
+    border: solid #11B5E4 1px;
+    background-color: rgb(247, 247, 172);
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
 }
@@ -115,9 +133,16 @@
 }
 
 .cardBox {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    margin-top: 5px;
+}
+
+.cardImageCol img {
+    width: 60vh;
+    height: 60vh;
 }
 
 .cardInfoCol {
@@ -125,16 +150,43 @@
 }
 
 .cardInfoTitle {
-    font-style: oblique;
+    /* font-style: oblique; */
     margin-bottom: 20px;
-    font-size: 20px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.cardInfoDescription {
+    font-style: oblique;
+}
+
+.commentsListContainer {
+    border-left: solid 1px #11B5E4;
 }
 
 .commentsList {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    margin-top: 20px;
+    margin-top: 5px;
+    overflow-y: scroll;
+    height: 48vh;
+}
+
+.commentInputContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+    padding: 5px 20px;
+    /* box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important; */
+    box-shadow: inset 0px 0px 0px rgba(0, 0, 0, 0.075), 0px -10px 5px rgba(0, 0, 0, 0.075);
+}
+
+.commentInputBody {
+    display: flex;
+    flex-direction: row;
+    gap: 1vh;
 }
 
 .commentBox {
@@ -172,4 +224,28 @@
     font-style: oblique;
     font-size: 14px;
     color: gray;
+}
+
+.commentBtn {
+    color: white;
+    border-color: #11B5E4;
+    background-color: #11B5E4;
+}
+
+.commentBtn:hover {
+    border-color: #11B5E4;
+    color: #11B5E4;
+    background-color: white;
+}
+
+@media only screen and (max-width: 700px) {
+    .infoContainer {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 50px 100px;
+    }
+
+    .cardBox {
+        grid-template-columns: 1fr;
+    }
 }

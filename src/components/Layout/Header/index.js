@@ -10,7 +10,7 @@ export default function Header() {
   const handleSignout = () => {
     localStorage.removeItem("logged-user");
     localStorage.removeItem("token-shoppy");
-    router.push(`/login`, { scroll: true });
+    router.push(`/`, { scroll: true });
   };
   return (
     <nav
