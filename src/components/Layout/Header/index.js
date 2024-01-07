@@ -37,7 +37,7 @@ export default function Header() {
         id="navbarNavAltMarkup"
       >
         <div className="navbar-nav">
-          <a className="nav-item nav-link" href="#">
+          <a className="nav-item nav-link" href="/homepage">
             Home
           </a>
           <a className="nav-item nav-link" href="/orders">

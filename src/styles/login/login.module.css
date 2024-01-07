@@ -1,10 +1,12 @@
 .LoginPage {
     background-color: #11B5E4;
     border: solid 1px #11B5E4;
+    color: black;
+    height: 100vh;
 }
 
 .LoginBox {
-    margin: 40px;
+    margin: 10vh;
     padding: 20px;
     background-color: #fff;
     display: flex;
@@ -16,7 +18,7 @@
 }
 
 .LoginForm, .SignupForm {
-    padding-top: 20px;
+    padding-top: 5vh;
     padding-bottom: 1px;
     padding-left: 40px;
     padding-right: 40px;
@@ -40,7 +42,8 @@
     font-weight: bold1;
     font-size: 40px;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 4vh;
+    color: black;
 }
 
 .Logo {
@@ -82,5 +85,5 @@
     justify-content: center;
     gap: 10px;
     font-size: 14px;
-    margin-top: 10px;
+    margin-top: 2vh;
 }

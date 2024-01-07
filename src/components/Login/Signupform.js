@@ -3,7 +3,7 @@ import React from "react";
 export default function Signupform({ signup, styles, toLogin }) {
   return (
     <form onSubmit={signup}>
-      <div className="form-group mb-2">
+      <div className="form-group mb-3">
         <label for="nameSignup" className={styles.LabelForm}>
           Name
         </label>
@@ -15,7 +15,7 @@ export default function Signupform({ signup, styles, toLogin }) {
           placeholder="Enter your name"
         />
       </div>
-      <div className="form-group mb-2">
+      <div className="form-group mb-3">
         <label for="emailSignup" className={styles.LabelForm}>
           Email address
         </label>
@@ -27,7 +27,7 @@ export default function Signupform({ signup, styles, toLogin }) {
           placeholder="Enter email"
         />
       </div>
-      <div className="form-group mb-2">
+      <div className="form-group mb-3">
         <label for="passwordSignup" className={styles.LabelForm}>
           Password
         </label>
@@ -39,7 +39,7 @@ export default function Signupform({ signup, styles, toLogin }) {
           placeholder="Password"
         />
       </div>
-      <div className="form-group mb-2">
+      <div className="form-group mb-3">
         <label for="confirmPasswordSignup" className={styles.LabelForm}>
           Confirm Password
         </label>
