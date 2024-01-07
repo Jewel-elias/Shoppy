@@ -44,16 +44,16 @@ export default function Page({ params }) {
                   {product.description}
                 </p>
                 <p className="card-text mt-5">
-                  <span className={styles.starIcon}>⭐</span>
-                  <span className={styles.starIcon}>⭐</span>
-                  <span className={styles.starIcon}>⭐</span>
-                  <span className={styles.starIcon}>⭐</span>
-                  <span className={styles.starIcon}>⭐</span>
-                  {/* rated by: */}
-                  {/* <small className="text-muted">{product.rate}</small> */}
+                  <span className={styles.rate}>
+                    <i className={styles.starIconInfo}>★</i>
+                    <i className={styles.starIconInfo}>★</i>
+                    <i className={styles.starIconInfo}>★</i>
+                    <i className={styles.starIconInfo}>★</i>
+                    <i className={styles.starIconInfo}>★</i>
+                  </span>
                   <small className="text-muted p-3">
                     {Math.round(product.rate * 100) / 100}
-                  </small>
+                  </small>{" "}
                 </p>
               </div>
             </div>
